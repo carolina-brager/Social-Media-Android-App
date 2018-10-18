@@ -1,1 +1,12 @@
-Final Project for CSC 216 - Mobile App Development in Android. The goal of the project was to design a social media app. The classes are divided into Model, View, and Controller folders. The Model folder includes the information for the database of the app. The three tables that are in my database are the User table, Post table, and the Favorites table. Each of these has a Data Access Object and a respective class for the table. The View folder includes all of the activities for the app which are separated into non-logged in activities and logged in activities. I did this because there are some functionalities that the logged in activities share. The controller folder includes classes for calculation of date of birth and the images used in the app.
+Final Project for CSC 216 - Mobile App Development in Android. 
+
+The goal of the project was to design a social media app. The project uses the Model-View-Controller design pattern for organizaition and separation of concerns.
+
+Model: includes information for the database of the app.
+View: All of the activites for the app which are separated into non-logged in activties and logged in activities.
+Controller: Classes for calculation of date of birth and for images used in the app.
+
+The database contains three tables:
+User: Contains information about each user
+Post: Contains information about all of the posts, and has a secondary key of the user who made the post
+Favorites: Contains information about the favorites of a user, has a secondary key of the primary user
