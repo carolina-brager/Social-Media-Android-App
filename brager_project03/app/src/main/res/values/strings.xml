@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">brager_project03</string>
+
+    <!-- Strings related to prompts (usually for textEdits) -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_hometown">Hometown</string>
+    <string name="prompt_birth_Date">Birth Date</string>
+    <string name="prompt_bio">Bio</string>
+    <string name="prompt_title">Title</string>
+
+    <!-- Strings related to actions (usually for buttons)-->
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_create_account">Create Account</string>
+    <string name="action_create_post">Create Post</string>
+    <string name="action_user_search">Search for a user</string>
+    <string name="action_update_profile_picture">Update Profile Picture</string>
+    <string name="action_save_changes">Save Changes</string>
+    <string name="action_post_content">Post Text Content</string>
+    <string name="action_add_image">Add Image</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Error Strings-->
+    <string name="error_invalid_login">Username or Password is invalid</string>
+    <string name="error_username_dne">Username does not exist</string>
+    <string name="error_invalid_username">This username is too short (5 character minimum)</string>
+    <string name="error_invalid_password">This password is too short (5 character minimum)</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_passwords_do_not_match">Passwords do not match</string>
+    <string name="error_username_taken">This username has been taken</string>
+    <string name="error_profile_incomplete">You must complete your profile before you can access the rest of the application</string>
+
+    <!--Completion Strings-->
+    <string name="registration_complete">You have successfully registered</string>
+    <string name="profile_update_complete">Your profile has been updated</string>
+    <string name="post_created">The post has been successfully created</string>
+
+    <!-- Navigation strings -->
+    <string name="action_view_feed">Feed</string>
+    <string name="action_new_post">Create New Post</string>
+    <string name="action_find_user">Find Users</string>
+    <string name="action_edit_profile">Edit Profile</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="navigation">Navigation</string>
+    <string name="navigation_drawer_open">The navigation drawer is open!</string>
+    <string name="navigation_drawer_close">The navigation drawer is closed!</string>
+
+    <!-- Activity header titles -->
+    <string name="title_activity_feed">Feed</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_new_post">Create New Post</string>
+    <string name="title_activity_find_user">Find User</string>
+    <string name="title_activity_view_user">View User</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

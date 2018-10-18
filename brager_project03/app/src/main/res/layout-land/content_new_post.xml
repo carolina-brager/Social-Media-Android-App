@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csc214.brager_project03.View.LoggedInActivities.NewPostActivity"
+    tools:showIn="@layout/app_bar_new_post">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/profile_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/title_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_title"
+                    android:layout_margin="5dp"/>
+                <EditText
+                    android:id="@+id/content_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="top"
+                    android:hint="@string/action_post_content"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/edit_text_border"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/add_image_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_add_image"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/post_image_view"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <!--Create the post, return to feed activity so
+                    that the user can see their post!-->
+                    <Button
+                        android:id="@+id/create_post_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_create_post"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentStart="true"/>
+                    <!-- Cancel button won't change the activity, it will just clear the values
+                    for the text edits and the image-->
+                    <Button
+                        android:id="@+id/cancel_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_cancel"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

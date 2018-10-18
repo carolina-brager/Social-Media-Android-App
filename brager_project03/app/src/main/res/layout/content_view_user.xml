@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csc214.brager_project03.View.LoggedInActivities.ViewUserActivity"
+    tools:showIn="@layout/app_bar_view_user">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/profile_view" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/profile_pic_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/orca"/>
+
+                    <ImageView
+                        android:id="@+id/profile_favorite_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_favorite_border"
+                        android:tint="@color/colorIncorrect"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight=".5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/first_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:text="@string/prompt_first_name"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/last_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:text="@string/prompt_last_name"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/hometown_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:text="@string/prompt_hometown"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/birth_date_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:text="@string/prompt_birth_Date"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bio_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="16sp"
+            android:padding="10dp"
+            android:text="@string/prompt_bio"
+            android:scrollbars="vertical"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

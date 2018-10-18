@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/orca"
+            android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/first_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Firstname"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/last_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lastname"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite_border"
+                android:layout_gravity="end"
+                android:tint="@color/colorIncorrect"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

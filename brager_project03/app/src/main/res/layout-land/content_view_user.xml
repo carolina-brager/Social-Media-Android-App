@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csc214.brager_project03.View.LoggedInActivities.ViewUserActivity"
+    tools:showIn="@layout/app_bar_view_user">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/profile_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:layout_margin="5dp">
+                <include layout="@layout/user_profile_layout" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/bio_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="16sp"
+                android:padding="10dp"
+                android:text="@string/prompt_bio"
+                android:scrollbars="vertical"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

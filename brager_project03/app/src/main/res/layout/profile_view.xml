@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFragment"
+    android:id="@+id/fragment_frame_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="4dp">
+        <ImageView
+            android:id="@+id/bar_profile_image_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/orca" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/bar_first_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Firstname"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/bar_last_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lastname"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="right">
+             <Button
+                 android:id="@+id/fragment_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="Edit Profile"
+                 android:textSize="12sp"/>
+         </RelativeLayout>-->
+
+    </LinearLayout>
+</FrameLayout>

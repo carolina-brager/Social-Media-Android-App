@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/post_profile_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="4dp">
+            <ImageView
+                android:id="@+id/post_profile_image_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/orca" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="10dp">
+                <TextView
+                    android:id="@+id/post_first_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Firstname"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/post_last_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lastname"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/post_is_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="4dp"
+                    android:tint="@color/colorIncorrect"/>
+            </RelativeLayout>-->
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/post_title_view"
+            android:hint="Title"
+            android:textSize="32sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/post_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/post_content_view"
+            android:hint="Content"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
