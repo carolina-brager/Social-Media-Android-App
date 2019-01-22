@@ -1,6 +1,6 @@
 Final Project for CSC 216 - Mobile App Development in Android. 
 
-The goal of the project was to design a social media app. The project uses the Model-View-Controller design pattern for organizaition and separation of concerns.
+The goal of the project was to design a social media app. The project uses the Model-View-Controller design pattern for organization and separation of concerns.
 
 Model: includes information for the database of the app.
 View: All of the activites for the app which are separated into non-logged in activties and logged in activities.
